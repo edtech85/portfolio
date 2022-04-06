@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px Arial, sans-serif;
+    background-color: black;
+}
+
+.margin {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* INICIO - NAV BAR --> */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #232323;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: #5fff2f;
+    text-align: left;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #5fff2f;
+    color: #000000;
+}
+
+ul.topnav li a.active {
+    background-color: #04AA6D;
+}
+
+ul.topnav li.right {
+    float: right; 
+}
+
+@media screen and (max-width: 600px) {
+
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+/* FIM - NAV BAR --> */
+
+
+
+/* DROP DOWN */
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px 16px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #5fff2f;
+    color: #000000;
+}
+
+li.dropdown {
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 2px 2px 2px 2px #5fff2f;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #0ed7de;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ee0000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* DROP DOWN */
+
+
+
+.aboutme {
+    background-color: #000000;
+    color: #5fff2f;
+    text-align: center;
+
+}
+
+.img-profile{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-radius: 50%;
+  }
+
+.curriculum {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.portfolio {
+    background-color: #000000;
+    color: #5fff2f;
+    text-align: center;
+}
+
+.redessociais {
+    border-radius: 20px;
+}
+
+.socialcenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coluna-20 {
+    width: 20%;
+}
+
+.footer {
+    margin: 10px;
+    background-color: #000000;
+    color: #5fff2f;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+/* BEGIN - FADE PROFILE IMG */
+
+.container {
+    position: relative;
+    max-width: 350px;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 2s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: 2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  .container:hover .image {
+    opacity: 0.2;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #5fff2f;
+    color: #000000;
+    font-size: 16px;
+    padding: 16px 32px;
+    text-align: center;
+  }
+/* END - FADE PROFILE IMG */
+
+
+
+
+/* INICIO - GRID - COLUNAS */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container>div {
+    padding: 20px 0px;
+    font-size: 30px;
+}
+
+
+/* FIM - GRID - COLUNAS */
+
+
+
+
+
+
+/* SOCIAL HOVER */
+/* Container needed to position the overlay. Adjust the width as needed */
+.containerhov {
+    position: relative;
+    width: 100px;
+}
+
+/* Make the image to responsive */
+.imagehov {
+    width: 100px;
+    height: 100px;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlayhov {
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    right: 0;
+    background-color: #5fff2f;
+    overflow: hidden;
+    max-width: 100px;
+    height: 100px;
+    transform: scale(0);
+    transition: 1s ease;
+    border-radius: 20px;
+}
+
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.containerhov:hover .overlayhov {
+    transform: scale(1);
+}
+
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+.texthov {
+    color: #000000;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

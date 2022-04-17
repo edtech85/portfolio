@@ -1,9 +1,9 @@
 # Portfolio
 ## Curriculum / Portfolio
 
-### Beta Version: Updating the responsiveness and some translations.
+### Beta Version: Updating the mobile responsiveness and some translations.
 
-### Versão Beta: Atualizando as responsividades e algumas traduções.
+### Versão Beta: Atualizando as responsividades mobile e algumas traduções.
 
 #### https://edtech85.github.io/portfolio/
 

@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/img/favicon.png" type="image/png" />
 
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="JS/scripts.js" defer></script>
 
-    <script src="JS/matrix.js"></script>
     <title>Edson Costa</title>
 </head>
 
@@ -27,49 +27,61 @@
         <li class=" right dropdown">
             <a href="javascript:void(0)" class="dropbtn">Languages</a>
             <div class="dropdown-content">
-                <a href="#">English</a>
-                <a href="#">Portuguese</a>
-                <a href="#">Spanish</a>
+                <a href="#en" id="langEn">English</a>
+                <a href="#pt" id="langPt">Portuguese</a>
+                <a href="#es" id="langEs">Spanish</a>
             </div>
         </li>
     </ul>
     <!-- END - NAVBAR -->
 
-    <!-- BEGIN - ABOUT ME -->
-    <section id="aboutme">
-        <div class="">
-            <h1 class="margin  aboutme">About Me</h1>
-        </div>
-        <div class="container img-profile">
-            <img src="img/foto perfil edson.jpg" class="image img-profile" style="width:100%" alt="Profile Picture">
-            <div class="middle">
-                <div class="text redessociais ">Welcome!<br> I am Edson Costa.</div>
+    <main>
+        <!-- BEGIN - ABOUT ME -->
+        <section id="aboutme">
+            <div class="">
+                <h1 id='aboutMeTitle' class="margin aboutme">About Me</h1>
             </div>
-        </div>
+            <div class="container img-profile">
+                <img src="img/foto perfil edson.jpg" class="image img-profile" style="width:100%" alt="Profile Picture">
+                <div class="middle">
+                    <div class="text redessociais" id="welcomeFoto">Welcome!<br> I am Edson Costa.</div>
+                </div>
+            </div>
 
-        <div>
-            <h5 class="margin aboutme">
-                <p>Bachelor in Business Administration with a degree in Foreign Trade completed in 2013.</p>
-                <br>
-                <p>Currently working as a Technical Support Analyst at LIT - Saint Paul.</p>
-                <br>
-                <p>Fluent English with more than 2 years of experience living in New Zealand. Advanced Spanish. <br>
-                    Previous employment as a Bilingual Compliance Ombudsman(English and Spanish).
-                </p>
-                <br>
-                <p>Crypto investor since 2016.</p>
-            </h5>
-        </div>
+            <div>
+                <h5 id="aboutMeHistoryEn" class="margin aboutme">
+                    <p id="p1">Bachelor in Business Administration with a degree in Foreign Trade completed in 2013.</p>
+                    <br> <p id="p2">Currently working as a Technical Support Analyst at LIT - Saint Paul.</p> <br> <p id="p3">Fluent English with more than 2 years of experience living in New Zealand. Advanced Spanish. <br> <span id="sp1">Previous employment as a Bilingual Compliance Ombudsman(English and Spanish).</span> </p> <br> <p id="p4">Crypto investor since 2016.</p>
+                </h5>
+            </div>
 
-    </section>
-    <!-- END - ABOUT ME -->
+            <div>
+                <h5 id="aboutMeHistoryPt" class="margin aboutme hide">
+                    <p>Bacharelado em Administração de Empresas com linha de formação em Comércio Exterior finalizado em 2013.</p> <br> <p>Atualmente trabalhando como Analista de Suporte Técnico na LIT - Saint Paul.</p> <br> <p>Inglês fluente com experiência de mais de 2 anos morando na Nova Zelândia. Espanhol avançado. <br> Emprego anterior como Ouvidor Compliance Bilíngue(Inglês e Espanhol). </p> <br>
+                    <p>Cripto investidor desde 2016.</p>
+                </h5>
+            </div>
+
+            <div>
+                <h5 id="aboutMeHistoryEs" class="margin aboutme hide">
+                    <p>Licenciatura en Administración de Empresas con formación en Comercio Exterior finalizada en 2013.</p> <br> <p>Actualmente trabajo como Analista de Soporte Técnico en LIT - Saint Paul.</p> <br> <p>Inglés fluido con más de 2 años de experiencia viviendo en Nueva Zelanda. Español avanzado.<br>Empleo anterior como Defensor de Cumplimiento Bilingüe (inglés y español).</p> <br>
+                    <p>Cripto inversor desde 2016.</p>
+                </h5>
+            </div>
+
+
+        </section>
+        <!-- END - ABOUT ME -->
+    </main>
 
     <!-- BEGIN - CURRICULUM -->
     <section id="curriculum">
         <div class="margin curriculum">
             <h2 class="margin"><b>Curriculum</b></h2>
             <div>
-                <h4><b>Previous Experience</b></h4>
+                <h4 id="curriculumEn"><b>Previous Experience</b></h4>
+                <h4 id="curriculumPt" class="hide"><b>Experência Anterior</b></h4>
+                <h4 id="curriculumEs" class="hide"><b>Experiencia Previa</b></h4>
 
                 <p> Jan 2022 - Current <br>
                     Technical Support Analyst at Lit - Saint Paul</p>
@@ -80,14 +92,19 @@
 
             <section id="graduation">
                 <div class="margin curriculum">
-                    <h4><b>Graduation</b></h4>
+                    <h4 id="graduationEn"><b>Graduation</b></h4>
+                    <h4 id="graduationPt" class="hide"><b>Graduação</b></h4>
+                    <h4 id="graduationEs" class="hide"><b>Graduación</b></h4>
                     <p> Bachelor's degree in Business Administration at UNESA - Universidade Estácio de Sá</p>
                 </div>
             </section>
 
             <section id="skills">
-                <h4><b>Skills</b></h4>
+                <h4 id="skillsEn"><b>Skills</b></h4>
+                <h4 id="skillsPt" class="hide"><b>Habilidades</b></h4>
+                <h4 id="skillsEs" class="hide"><b>Habilidades</b></h4>
                 HTML5, CSS3, JavaScript, SQL, MongoDB, Excel
+
             </section>
 
         </div>
@@ -107,7 +124,7 @@
                 <div>
                     <div class="coluna-20 containerhov socialcenter">
                         <a href="https://github.com/edtech85" target="_blank">
-                            <img src="img/GitHub-Mark.png" class="redessociais" width="100px" alt="GitHub">
+                            <img src="img/GitHub-Mark.png" class="redessociais imagehov" width="100px" alt="GitHub">
                             <div class="overlayhov">
                                 <div class="texthov">GitHub</div>
                             </div>
@@ -118,7 +135,7 @@
                 <div>
                     <div class="coluna-20 containerhov socialcenter">
                         <a href="https://www.linkedin.com/in/criptoinvestidor85/" target="_blank">
-                            <img src="img/linkedin.png" class="redessociais" width="100px" alt="Linkedin">
+                            <img src="img/linkedin.png" class="redessociais imagehov" width="100px" alt="Linkedin">
                             <div class="overlayhov">
                                 <div class="texthov">Linkedin</div>
                             </div>
@@ -129,7 +146,7 @@
                 <div>
                     <div class="coluna-20 containerhov socialcenter">
                         <a href="https://www.behance.net/ed_tech" target="_blank">
-                            <img src="img/behance.jpeg" class="redessociais" width="100px" alt="Behance">
+                            <img src="img/behance.jpeg" class="redessociais imagehov" width="100px" alt="Behance">
                             <div class="overlayhov">
                                 <div class="texthov">Behance</div>
                             </div>
@@ -140,7 +157,7 @@
                 <div>
                     <div class="coluna-20 containerhov socialcenter">
                         <a href="https://www.instagram.com/criptoinvestidor85" target="_blank">
-                            <img src="img/instagram.png" class="redessociais" width="100px" alt="Instagram">
+                            <img src="img/instagram.png" class="redessociais imagehov" width="100px" alt="Instagram">
                             <div class="overlayhov">
                                 <div class="texthov">Instagram</div>
                             </div>

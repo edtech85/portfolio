@@ -18,7 +18,7 @@ body {
     padding-bottom: 15px;
 }
 
-/* INICIO - NAV BAR --> */
+/* BEGIN - NAV BAR --> */
 ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -51,13 +51,10 @@ ul.topnav li a.active {
 ul.topnav li.right {
     float: right; 
 }
+/* END - NAV BAR --> */
 
 
-/* FIM - NAV BAR --> */
-
-
-
-/* DROP DOWN */
+/* BEGIN - DROP DOWN */
 li a,
 .dropbtn {
     display: inline-block;
@@ -75,7 +72,6 @@ li a:hover,
 
 li.dropdown {
     display: inline-block;
-    
 }
 
 .dropdown-content {
@@ -101,13 +97,20 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-/* DROP DOWN */
+/* END - DROP DOWN */
+
+.aboutme-title {
+    font-size: 20px;
+    color: var(--green);
+    text-align: center;
+}
 
 .aboutme {
     background-color: #000000;
     color: var(--green);
     text-align: center;
-
+    font-size: 16px;
+    font-weight: normal;
 }
 
 .img-profile{
@@ -193,7 +196,7 @@ li.dropdown {
   }
 /* END - FADE PROFILE IMG */
 
-/* INICIO - GRID - COLUNAS */
+/* BEGIN - GRID - COLUMNS */
 
 .grid-container {
     display: grid;
@@ -206,10 +209,10 @@ li.dropdown {
     padding: 20px 0px;
     font-size: 30px;
 }
-/* FIM - GRID - COLUNAS */
+/* END - GRID - COLUMNS */
 
 
-/* SOCIAL HOVER */
+/* BEGIN - SOCIAL HOVER */
 /* Container needed to position the overlay. Adjust the width as needed */
 .containerhov {
     position: relative;

@@ -18,101 +18,200 @@
 </head>
 
 <body>
-    <!-- BEGIN - NAVBAR -->
-    <ul class="topnav">
-        <li><a href="#whoIam">About Me</a></li>
-        <li><a href="#curriculum">Curriculum</a></li>
-        <li><a href="#portfolio">Social/Portfolio</a></li>
+    <header>
+        <!------------ BEGIN - NAVBAR ------------>
+        <div>
+            <ul class="topnav">
+                <li><a href="#whoIam">About Me</a></li>
+                <li><a href="#curriculum">Curriculum</a></li>
+                <li><a href="#portfolio">Social/Portfolio</a></li>
 
-        <li class=" right dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Languages</a>
-            <div class="dropdown-content">
-                <a href="#en" id="langEn">English</a>
-                <a href="#pt" id="langPt">Portuguese</a>
-                <a href="#es" id="langEs">Spanish</a>
-            </div>
-        </li>
-    </ul>
-    <!-- END - NAVBAR -->
+                <li class="right dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Languages</a>
+                    <div class="dropdown-content">
+                        <a href="#en" id="langEn">English</a>
+                        <a href="#pt" id="langPt">Portuguese</a>
+                        <a href="#es" id="langEs">Spanish</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!------------ END - NAVBAR ------------>
+    </header>
 
     <main>
-        <!-- BEGIN - ABOUT ME -->
-        <section id="aboutme">
-            <div class="">
-                <h1 id='aboutMeTitle' class="margin aboutme">About Me</h1>
+        <!------------ BEGIN - ABOUT ME ------------>
+        <!-- BEGIN - ENGLISH ABOUT ME -->
+        <section id="aboutMeEn">
+            <div>
+                <h1 class="margin aboutme-title">About Me</h1>
             </div>
             <div class="container img-profile">
                 <img src="img/foto perfil edson.jpg" class="image img-profile" style="width:100%" alt="Profile Picture">
                 <div class="middle">
-                    <div class="text redessociais" id="welcomeFoto">Welcome!<br> I am Edson Costa.</div>
+                    <div class="text redessociais" id="welcomeFoto">Welcome!<br> I am <span>Edson Costa</span>.</div>
                 </div>
             </div>
 
             <div>
-                <h5 id="aboutMeHistoryEn" class="margin aboutme">
-                    <p id="p1">Bachelor in Business Administration with a degree in Foreign Trade completed in 2013.</p>
-                    <br> <p id="p2">Currently working as a Technical Support Analyst at LIT - Saint Paul.</p> <br> <p id="p3">Fluent English with more than 2 years of experience living in New Zealand. Advanced Spanish. <br> <span id="sp1">Previous employment as a Bilingual Compliance Ombudsman(English and Spanish).</span> </p> <br> <p id="p4">Crypto investor since 2016.</p>
+                <h5 class="margin aboutme">
+                    <p>Bachelor in Business Administration with a degree in Foreign Trade completed in 2013.</p> <br>
+                    <p>Currently working as a Technical Support Analyst at LIT - Saint Paul. </p> <br>
+                    <p>Fluent English with more than 2 years of experience living in New Zealand. Advanced Spanish. <br>
+                        Previous employment as a Bilingual Compliance Ombudsman(English and Spanish). </p> <br>
+                    <p>Crypto investor since 2016.</p>
                 </h5>
+            </div>
+        </section>
+        <!-- END - ENGLISH ABOUT ME -->
+
+        <!-- BEGIN - PORTUGUESE ABOUT ME -->
+        <section id="aboutMePt" class="hide">
+            <div class="">
+                <h1 class="margin aboutme-title">Sobre Mim</h1>
+            </div>
+            <div class="container img-profile">
+                <img src="img/foto perfil edson.jpg" class="image img-profile" style="width:100%" alt="Profile Picture">
+                <div class="middle">
+                    <div class="text redessociais" id="welcomeFoto">Bem vindo!<br> Eu sou o <span>Edson Costa</span>.
+                    </div>
+                </div>
             </div>
 
             <div>
-                <h5 id="aboutMeHistoryPt" class="margin aboutme hide">
-                    <p>Bacharelado em Administração de Empresas com linha de formação em Comércio Exterior finalizado em 2013.</p> <br> <p>Atualmente trabalhando como Analista de Suporte Técnico na LIT - Saint Paul.</p> <br> <p>Inglês fluente com experiência de mais de 2 anos morando na Nova Zelândia. Espanhol avançado. <br> Emprego anterior como Ouvidor Compliance Bilíngue(Inglês e Espanhol). </p> <br>
+                <h5 class="margin aboutme">
+                    <p>Bacharelado em Administração de Empresas com linha de formação em Comércio Exterior finalizado em
+                        2013.</p> <br>
+                    <p>Atualmente trabalhando como Analista de Suporte Técnico na LIT - Saint Paul.</p> <br>
+                    <p>Inglês fluente com experiência de mais de 2 anos morando na Nova Zelândia. Espanhol avançado.
+                        <br> Emprego anterior como Ouvidor Compliance Bilíngue(Inglês e Espanhol).
+                    </p> <br>
                     <p>Cripto investidor desde 2016.</p>
                 </h5>
             </div>
+        </section>
+        <!-- END - PORTUGUESE ABOUT ME -->
+
+        <!-- BEGIN - SPANISH ABOUT ME -->
+        <section id='aboutMeEs' class="hide">
+            <div class="">
+                <h1 class="margin aboutme-title">Sobre Mi</h1>
+            </div>
+            <div class="container img-profile">
+                <img src="img/foto perfil edson.jpg" class="image img-profile" style="width:100%" alt="Profile Picture">
+                <div class="middle">
+                    <div class="text redessociais" id="welcomeFoto">¡Bienvenido!<br> Yo soy <span>Edson Costa</span>.
+                    </div>
+                </div>
+            </div>
 
             <div>
-                <h5 id="aboutMeHistoryEs" class="margin aboutme hide">
-                    <p>Licenciatura en Administración de Empresas con formación en Comercio Exterior finalizada en 2013.</p> <br> <p>Actualmente trabajo como Analista de Soporte Técnico en LIT - Saint Paul.</p> <br> <p>Inglés fluido con más de 2 años de experiencia viviendo en Nueva Zelanda. Español avanzado.<br>Empleo anterior como Defensor de Cumplimiento Bilingüe (inglés y español).</p> <br>
+                <h5 class="margin aboutme">
+                    <p>Licenciatura en Administración de Empresas con formación en Comercio Exterior finalizada en 2013.
+                    </p> <br>
+                    <p>Actualmente trabajo como Analista de Soporte Técnico en LIT - Saint Paul.</p> <br>
+                    <p>Inglés fluido con más de 2 años de experiencia viviendo en Nueva Zelanda. Español
+                        avanzado.<br>Empleo
+                        anterior como Defensor de Cumplimiento Bilingüe (inglés y español).</p> <br>
                     <p>Cripto inversor desde 2016.</p>
                 </h5>
             </div>
-
-
         </section>
-        <!-- END - ABOUT ME -->
+        <!-- END - SPANISH ABOUT ME -->
+        <!------------ END - ABOUT ME ------------>
     </main>
 
-    <!-- BEGIN - CURRICULUM -->
-    <section id="curriculum">
+    <!------------ BEGIN - CURRICULUM ------------>
+    <!-- BEGIN - ENGLISH CURRICULUM -->
+    <section id="curriculumEn">
         <div class="margin curriculum">
             <h2 class="margin"><b>Curriculum</b></h2>
             <div>
-                <h4 id="curriculumEn"><b>Previous Experience</b></h4>
-                <h4 id="curriculumPt" class="hide"><b>Experência Anterior</b></h4>
-                <h4 id="curriculumEs" class="hide"><b>Experiencia Previa</b></h4>
-
+                <h4><b>Previous Experience</b></h4>
                 <p> Jan 2022 - Current <br>
-                    Technical Support Analyst at Lit - Saint Paul</p>
-                <br>
+                    Technical Support Analyst at Lit - Saint Paul</p> <br>
                 <p> Nov 2015 - Jun 2019 <br>
                     Bilingual Ombudsman (English and Spanish) at Contato Seguro </p>
             </div>
 
-            <section id="graduation">
+            <section id="graduationEn">
                 <div class="margin curriculum">
-                    <h4 id="graduationEn"><b>Graduation</b></h4>
-                    <h4 id="graduationPt" class="hide"><b>Graduação</b></h4>
-                    <h4 id="graduationEs" class="hide"><b>Graduación</b></h4>
-                    <p> Bachelor's degree in Business Administration at UNESA - Universidade Estácio de Sá</p>
+                    <h4><b>Graduation</b></h4>
+                    <p> Bachelor's degree in Business Administration at UNESA - Estácio de Sá University</p>
                 </div>
             </section>
 
-            <section id="skills">
-                <h4 id="skillsEn"><b>Skills</b></h4>
-                <h4 id="skillsPt" class="hide"><b>Habilidades</b></h4>
-                <h4 id="skillsEs" class="hide"><b>Habilidades</b></h4>
+            <section id="skillsEn">
+                <h4><b>Skills</b></h4>
                 HTML5, CSS3, JavaScript, SQL, MongoDB, Excel
-
             </section>
 
         </div>
-        </div>
-    </section>
-    <!-- END - CURRICULUM -->
 
-    <!-- BEGIN - GRID SOCIAL-->
+    </section>
+    <!-- END - ENGLISH CURRICULUM -->
+
+    <!-- BEGIN - PORTUGUESE CURRICULUM -->
+    <section id="curriculumPt" class="hide">
+        <div class="margin curriculum">
+            <h2 class="margin"><b>Currículo</b></h2>
+            <div>
+                <h4><b>Experiência Anteriopr</b></h4>
+                <p> Jan 2022 - Atual <br>
+                    Analista de Suporte Técnico na Lit - Saint Paul</p> <br>
+                <p> Nov 2015 - Jun 2019 <br>
+                    Ouvidor Compliance Bilingue (inglês e espanhol) na Contato Seguro </p>
+            </div>
+
+            <section id="graduationPt">
+                <div class="margin curriculum">
+                    <h4><b>Graduação</b></h4>
+                    <p> Bacharelado em Administração de Empresas cpom linha de formação em Comércio Exterior pela UNESA
+                        - Universidade Estácio de Sá</p>
+                </div>
+            </section>
+
+            <section id="skillsPt">
+                <h4><b>Habilidades</b></h4>
+                HTML5, CSS3, JavaScript, SQL, MongoDB, Excel
+            </section>
+
+        </div>
+
+    </section>
+    <!-- END - PORTUGUESE CURRICULUM -->
+
+    <!-- BEGIN - SPANISH CURRICULUM -->
+    <section id="curriculumEs" class="hide">
+        <div class="margin curriculum">
+            <h2 class="margin"><b>Curriculum</b></h2>
+            <div>
+                <h4><b>Experiencia Previa</b></h4>
+                <p> Ene 2022 - Actual <br>
+                    Analista de Soporte Técnico en Lit - Saint Paul</p> <br>
+                <p> Nov 2015 - Jun 2019 <br>
+                    Oidor Bilingüe (inglés y español) en Contato Seguro </p>
+            </div>
+
+            <section id="graduationEs">
+                <div class="margin curriculum">
+                    <h4><b>Graduación</b></h4>
+                    <p> Licenciatura en Administración de Empresas en UNESA - Universidade Estácio de Sá</p>
+                </div>
+            </section>
+
+            <section id="skillsEs">
+                <h4><b>Habilidades</b></h4>
+                HTML5, CSS3, JavaScript, SQL, MongoDB, Excel
+            </section>
+
+        </div>
+
+    </section>
+    <!-- END - SPANISH CURRICULUM -->
+    <!------------ END - CURRICULUM ------------>
+
+    <!------------ BEGIN - SOCIAL GRID ------------>
     <section id="portfolio">
         <div class="portfolio">
             <h3 class="margin">Social / Portfolio</h3>
@@ -178,12 +277,14 @@
 
             </div>
         </div>
-        </div>
-        </div>
     </section>
-    <!-- END - GRID SOCIAL-->
+    <!------------ END - SOCIAL GRID ------------>
 
-    <footer class="footer"> Developed by Edson Costa - 2022 - All rights </footer>
+    <footer id="footerEn" class="footer"> Developed by Edson Costa © - 2022 - All rights reserved </footer>
+    <footer id="footerPt" class="footer hide"> Desenvolvido por Edson Costa © - 2022 - Todos os direitos reservados
+    </footer>
+    <footer id="footerEs" class="footer hide"> Desarrollado por Edson Costa © - 2022 - Todos los derechos reservados
+    </footer>
 
 </body>
 
